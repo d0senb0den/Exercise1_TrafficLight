@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<TrafficLightService>(); // så skapar den här en instans av TrafficLightService
+builder.Services.AddSingleton<TrafficLightService>();
 builder.Services.AddSignalR();
 builder.Services.AddCors(options =>
 {

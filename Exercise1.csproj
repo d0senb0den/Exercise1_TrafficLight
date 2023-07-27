@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Exercise1Frontend\src\app\traffic-light.service.ts" />
+    <None Remove="Client\src\app\traffic-light.service.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="Exercise1Frontend\src\app\traffic-light.service.ts" />
+    <TypeScriptCompile Include="Client\src\app\traffic-light.service.ts" />
   </ItemGroup>
 
 </Project>
