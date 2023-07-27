@@ -1,0 +1,28 @@
+Exercise 1 – General computer science and C# coding
+
+Implement a traffic light in code, using the following rules:
+
+•	The default for the traffic light should be red light.
+•	The traffic light should be in state red for 2 minutes, and then transition to green light.
+•	The traffic light should be green for a minimum of 2 minutes and a maximum of 6 minutes, and then transition back to red light.
+
+The class/classes should accept those minimum and maximum time values for each state as parameters so they can be changed from outside the class (from unit tests, for example).
+
+•	The traffic light should show only a yellow light for 5 seconds while transitioning from green to red.
+•	The traffic light should show both yellow and red light for 5 seconds while transitioning from red to green. // when turnGreen is called wait 5 seconds for red and 5 seconds for yellow 
+
+•	The traffic light has a button that pedestrians can push to hasten the transition from green to red. 
+o	When pushing the button, and the traffic light is currently red, nothing should happen. 
+o	When pushing the button, and the traffic light is currently green, it should continue to be green for 30 seconds, unless those 30 seconds would make the light go beyond the maximum time of state green, then the maximum time in state green should take precedence. It should then turn red and follow the normal behavior for the state red.
+
+Create a simple user interface in Angular, and a button to represent the button for the pedestrians. Allow the user to change minimum and maximum times for each state (so it’s easier to validate that the solution works without having to wait many minutes), either via configuration file, or via input boxes in the user interface.
+
+Write unit tests to validate the functionality of the class.
+
+
+
+The purpose of the exercise is to showcase that you can:
+•	Understand logical rules when explained, and turn them into code that is readable by others.
+•	Identify and understand the nature of a finite state machine with state transitions, and implement it in code (formal computer science education or black belt in Google fu).
+•	Write testable code; that has sufficient level of abstraction level to enable the writing of unit tests.
+Understand the concept of unit tests, and can write them to validate code.
